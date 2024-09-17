@@ -1,0 +1,69 @@
+/*esto se pone para dejarlo todo a cero y que no influyan las cosas por defecto del navegador que este usando*/
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(36, 135, 228);
+    color: #000000;
+}
+
+header {
+    background-color: #a5d6f1;
+    text-align: center;
+    padding: 6px;
+}
+
+h1 {
+    font-size: 60px;
+    color: blue;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px 50px;
+    margin-bottom: 50px;
+    background-color: rgb(169, 222, 247);
+    display: flex;
+    gap: 3em; /*esto sirve para separar los items */
+}
+
+nav ul li {
+    display: inline;
+}
+
+section {
+    width: 70%;
+    margin-top: 20px;
+    padding: 2em;
+    border: 4px solid black;
+    border-radius: 25px;
+    background-color: #a5d6f1;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+section p {
+    font-size: 18px;
+    color: #848485;
+}
+
+footer {
+    margin-top: 70px;
+    padding: 10px 50px;
+    background-color: #a5d6f1;
+    text-align: right;
+}
