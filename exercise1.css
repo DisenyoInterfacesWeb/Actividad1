@@ -1,4 +1,16 @@
 /*esto se pone para dejarlo todo a cero y que no influyan las cosas por defecto del navegador que este usando*/
+:root{
+    --colorFondoResalte: #00216b;
+    --colorEncabezados: #0030ff;
+    --fuenteSerif: "Lora";
+    --fuenteSansSerif: "Poppins";
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(Fonts/Poppins/Poppins-Regular.ttf);
+}
+
 *{
     box-sizing: border-box;
     padding: 0px;
@@ -6,20 +18,21 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(36, 135, 228);
-    color: #000000;
+    font-family: var(--fuenteSansSerif), sans-serif;
+    background-color: rgb(245, 245, 245);
+    color: #444444;
 }
 
 header {
-    background-color: #a5d6f1;
+    background-color: var(--colorFondoResalte);
     text-align: center;
     padding: 6px;
 }
 
 h1 {
+    font-family: var(--fuenteSerif);
     font-size: 60px;
-    color: blue;
+    color: rgb(245, 245, 245);
 }
 
 main{
@@ -32,7 +45,7 @@ nav ul {
     list-style-type: none;
     padding: 10px 50px;
     margin-bottom: 50px;
-    background-color: rgb(169, 222, 247);
+    background-color: rgb(212, 211, 211);
     display: flex;
     gap: 3em; /*esto sirve para separar los items */
 }
@@ -41,29 +54,35 @@ nav ul li {
     display: inline;
 }
 
+a {
+    color: #0030ff;
+}
+
 section {
     width: 70%;
     margin-top: 20px;
+    margin-left: 20px;
     padding: 2em;
     border: 4px solid black;
     border-radius: 25px;
-    background-color: #a5d6f1;
+    background-color: rgb(212, 211, 211);
 }
 
 section h2 {
     font-size: 30px;
     margin-bottom: 10px;
-    color: black;
+    color: #0030ff;
 }
 
 section p {
     font-size: 18px;
-    color: #848485;
+    color: #444444;
 }
 
 footer {
     margin-top: 70px;
     padding: 10px 50px;
-    background-color: #a5d6f1;
+    background-color: var(--colorFondoResalte);
+    color: rgb(245, 245, 245);
     text-align: right;
 }
