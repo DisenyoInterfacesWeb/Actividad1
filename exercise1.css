@@ -25,7 +25,7 @@
 body {
     height: 100vh; /* Le doy una altura de 100 de lo quew se ve para luego hacerlo crecer al tope y que se fije el footer bajo */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* esto solo le dice si van a ir en horizontal o vertical los diferentes componentes del contenedor */
     font-family: var(--fuenteSansSerif), sans-serif;
     background-color: var(--colorBlancoFondo);
     color: var(--colorLetraTexto);
@@ -44,6 +44,7 @@ h1 {
 }
 
 main {
+    padding: 30px;
     display: flex;
     gap: 3em;/*esto sirve para separar los items */
     flex-grow: 1; /* esto hace que crezca y ocupe todo el espacio disponible asi dejo fijo el footer siempre al final */
@@ -68,10 +69,8 @@ a {
 }
 
 section {
-    width: 25%;
     align-self: flex-start; /* hace que el contenedor se adapte al texto segun tamaño de pantalla */
     margin-top: 20px;
-    margin-left: 20px;
     padding: 2em;
     border: 4px solid var(--colorBordeCajas);
     border-radius: 25px;
@@ -103,19 +102,5 @@ footer{
         /* le cambio la disposicion a column para que se vea bien cuando la pantalla es pequeña y corrijo el tamaño de letra para que sea legible*/ 
         flex-direction: column;
         justify-content: center;
-    }
-
-    section{
-        width: 40%;
-    }
-
-    nav ul li a{
-        font-size: 20px;
-    }
-}
-
-@media (width <= 375px){
-    nav ul li a {
-        font-size: 15px;
     }
 }
