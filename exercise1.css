@@ -44,7 +44,7 @@ h1 {
 }
 
 main {
-    padding: 30px;
+    padding: 50px;
     display: flex;
     gap: 3em;/*esto sirve para separar los items */
     flex-grow: 1; /* esto hace que crezca y ocupe todo el espacio disponible asi dejo fijo el footer siempre al final */
@@ -94,7 +94,7 @@ footer{
     padding: 10px 50px;
     background-color: var(--colorFondoResalte);
     color: var(--colorBlancoFondo);
-    text-align: right;
+    text-align: center;
 }
 
 @media (width <= 760px){
